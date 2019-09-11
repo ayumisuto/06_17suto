@@ -20,8 +20,7 @@ public class ColLesson03 {
 
             try {
                 xxx[n] = yyy;
-
-            n++;
+                n++;
             } catch (IndexOutOfBoundsException e) {
                 System.out.println("登録制限を超えました。登録済みのデータは以下になります。");
                 break;
