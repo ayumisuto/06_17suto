@@ -2,13 +2,14 @@ package ColLesson04;
 
 import ColLesson02.Word;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ColLesson04 {
 
     public static void main(String[] args) {
 
-        ArrayList<String> xxx = new ArrayList<String>();
+        ArrayList<Word> xxx = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
 
@@ -26,13 +27,8 @@ public class ColLesson04 {
 
             Word yyy = new Word(input);
 
-            xxx[n] = yyy;
 
-            xxx[n].add(yyy);
-            //xxx[n].add() = yyy; ??
-
-            //スライド③p54 words[index] = wd → words.add(wd)
-            //ここではwords=xxxとおいていると思うのですが、wd、indexなど対応している箇所がよくわかりません
+            xxx.add(yyy);
 
             n++;
             System.out.println("次の単語と意味を入力して下さい。\"e\"で終了します。");
@@ -40,10 +36,8 @@ public class ColLesson04 {
 
         for (int i = 0; i < n; i++) {
 
-            System.out.println(xxx[i].get(i));
-            xxx[i].side();
-
+            System.out.println(xxx.get(i));
         }
-        System.out.println(n + "件、登録しました。");
+        System.out.println( n + "件、登録しました。");
     }
 }
