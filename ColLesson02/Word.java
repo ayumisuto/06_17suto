@@ -3,7 +3,8 @@ package ColLesson02;
 public class Word {
     String word;
     String meaning;
-
+    
+    @Override
     public String toString() {
     return "単語:" + this.word + "意味:" + this.meaning;
     }
