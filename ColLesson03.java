@@ -29,7 +29,8 @@ public class ColLesson03 {
         }
         for (int i = 0; i < n; i++) {
 
-            System.out.println("単語:" + xxx[i].word + "意味:" + xxx[i].meaning);
+        System.out.println(xxx[i]);
+
         }
         System.out.println(n + "件、登録しました。");
     }
